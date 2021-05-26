@@ -13,7 +13,7 @@ Get the exact color at a given point of a given gradient
 ```
 
 2. Add the gradient element to your HTML
-3. Call `randomGradient(randFloat,gradient)` in your Javascript
+3. Call `var color = randomGradient(randFloat,gradient)` in your Javascript
 
 ## Inputs and outputs
 
