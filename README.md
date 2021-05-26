@@ -3,36 +3,17 @@ Get the exact color at a given point of a given gradient
 
 ## How to use
 
-1. Link to `gradient_stop.js` in your HTML
+1. Link to `gradient_stop.js` in your HTML or use a CDN:
 
 ```html
 <script src="/path/to/gradient_stop.js"></script>
 ```
-
-or use a CDN:
-
 ```html
 <script src="https://cdn.jsdelivr.net/gh/beverleyy/gradient-stop-css@master/js/gradient_stop.js"></script>
 ```
 
 2. Add the gradient element to your HTML
-
-```html
-<div id="your_gradient_class"></div>
-```
-
-```css
-#your_gradient_class {
-    /*add as many colors as you want*/
-    background:linear-gradient(direction, color_1, color_2); 
-} 
-```
-
-3. Call `randomGradient()` in your Javascript
-
-```javascript
-var color = randomGradient(randFloat,gradient);
-```
+3. Call `randomGradient(randFloat,gradient)` in your Javascript
 
 ## Inputs and outputs
 
@@ -55,8 +36,9 @@ var color = randomGradient(randFloat,gradient);
 ```
 
 ```javascript
+var theLocation = 0.5;  //midpoint of gradient
 var theGradient = document.getElementById("theDiv");
-var theColor = randomGradient(0.5,theGradient);
+var theColor = randomGradient(theLocation,theGradient);
 console.log(theColor); // 128,121,41
 ```
 
