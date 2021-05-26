@@ -22,7 +22,10 @@ or use a CDN:
 ```
 
 ```css
-#your_gradient_class {background:linear-gradient(direction, color_1, color_2);} /*add as many colors as you want*/
+#your_gradient_class {
+    /*add as many colors as you want*/
+    background:linear-gradient(direction, color_1, color_2); 
+} 
 ```
 
 3. Call `randomGradient()` in your Javascript
@@ -46,7 +49,9 @@ var color = randomGradient(randFloat,gradient);
 ```
 
 ```css
-#theDiv {background:linear-gradient(1rad, #00274c, #ffcb05);}
+#theDiv {
+    background:linear-gradient(1rad, #00274c, #ffcb05);
+}
 ```
 
 ```javascript
